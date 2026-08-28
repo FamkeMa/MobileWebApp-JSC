@@ -6,7 +6,7 @@ import { getDatabase,
          remove } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-database.js"
 
 const firebaseConfig = {
-    databaseURL: process.env.DATABASE_URL
+    databaseURL: "https://tracker-app-fc133-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
 const app = initializeApp(firebaseConfig)
