@@ -1,13 +1,24 @@
+/* Variables */
+:root {
+    --primary-bg-color: #7dac9c;
+    --primary-color: #397c61;
+    --secondary-color: #e7716d;
+    --dark-color: #214740;
+    --dark-color-2: #9a2d1f;
+    --bright-color: #ffffff;
+}
+
+/* Style of the web app */
 body {
     margin: 0 auto;
     padding: 10px;
     max-width: 300px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #c2eaee;
+    background-color: var(--primary-bg-color);
 }
 
 label {
-    color: #2d655c;
+    color: var(--dark-color);
     font-weight: bold;
     margin: 2px;
 }
@@ -17,31 +28,31 @@ input {
     margin-bottom: 10px;
     padding: 10px;
     box-sizing: border-box;
-    border: 1.5px solid #2d655c;
+    border: 1.5px solid var(--dark-color);
     border-radius: 5px;
 }
 
 button {
     padding: 10px 30px;
     font-weight: bold;
-    color: white;
-    background-color: #489c8e;
-    border: 1.5px solid #2d655c;
+    color: var(--bright-color);
+    background-color: var(--primary-color);
+    border: 1.5px solid var(--dark-color);
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #40877b;
+    background-color: var(--dark-color);
 }
 
 #delete-btn {
-    background-color: #d9fbf6;
-    color: #3b8075;
+    background-color: var(--secondary-color);
+    border: 1.5px solid var(--dark-color-2);
     margin-left: 8px;
 }
 
 #delete-btn:hover {
-    background-color: #a0efe3;
+    background-color: var(--dark-color-2);
 }
 
 ul {
@@ -55,5 +66,5 @@ ul li {
 }
 
 li a {
-    color: #2d655c;
+    color: var(--dark-color);
 }
